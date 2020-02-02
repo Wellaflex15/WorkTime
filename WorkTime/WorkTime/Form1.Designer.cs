@@ -66,26 +66,31 @@
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Commons", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.dateTimePicker1.Location = new System.Drawing.Point(42, 41);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(67, 29);
+            this.dateTimePicker1.Size = new System.Drawing.Size(67, 27);
             this.dateTimePicker1.TabIndex = 2;
             this.dateTimePicker1.Value = new System.DateTime(2020, 2, 2, 8, 0, 0, 0);
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // dateTimePicker2
             // 
+            this.dateTimePicker2.CalendarFont = new System.Drawing.Font("Commons", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.dateTimePicker2.Location = new System.Drawing.Point(115, 41);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(67, 29);
+            this.dateTimePicker2.Size = new System.Drawing.Size(67, 27);
             this.dateTimePicker2.TabIndex = 3;
             this.dateTimePicker2.Value = new System.DateTime(2020, 2, 2, 16, 30, 0, 0);
             // 
             // dateTimePicker3
             // 
+            this.dateTimePicker3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.dateTimePicker3.Location = new System.Drawing.Point(115, 76);
             this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(67, 29);
+            this.dateTimePicker3.Size = new System.Drawing.Size(67, 27);
             this.dateTimePicker3.TabIndex = 4;
             this.dateTimePicker3.Value = new System.DateTime(2020, 2, 2, 0, 0, 0, 0);
             // 
@@ -122,9 +127,10 @@
             // 
             // dateTimePicker4
             // 
+            this.dateTimePicker4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.dateTimePicker4.Location = new System.Drawing.Point(115, 111);
             this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(67, 29);
+            this.dateTimePicker4.Size = new System.Drawing.Size(67, 27);
             this.dateTimePicker4.TabIndex = 8;
             this.dateTimePicker4.Value = new System.DateTime(2020, 2, 2, 1, 0, 0, 0);
             // 

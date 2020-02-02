@@ -10,10 +10,11 @@ namespace WorkTime
     {
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
-        public Decimal GymTime { get; set; }
-        public Decimal LunchTime { get; set; }
+        public TimeSpan GymTime { get; set; }
+        public TimeSpan LunchTime { get; set; }
+        private decimal _workTime { get; set; }
 
-        public Time(DateTime startTime, DateTime endTime, Decimal gymTime = 0.0m, Decimal lunchTime = 1.0m)
+        public Time(DateTime startTime, DateTime endTime, TimeSpan gymTime, TimeSpan lunchTime)
         {
             StartTime = startTime;
             EndTime = endTime;
@@ -25,11 +26,22 @@ namespace WorkTime
         {
             Decimal TotalWorkTime = 0.0m;
 
-            TimeSpan differece = EndTime - StartTime;
+            LunchTime = TimeSpan.FromHours(1.0).Subtract(LunchTime);
 
-            TotalWorkTime = Convert.ToDecimal(differece.TotalHours) - GymTime - LunchTime;
+            TimeSpan differece = (EndTime - StartTime) - GymTime + LunchTime;
+
+            TotalWorkTime = Convert.ToDecimal(differece.TotalHours);
+
+            _workTime = TotalWorkTime;
 
             return TotalWorkTime;
+        }
+
+        public Decimal CalculateTimeBank()
+        {
+            decimal workTime = _workTime - 8.5m;
+
+            return workTime;
         }
     }
 }

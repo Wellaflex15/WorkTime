@@ -77,8 +77,15 @@ namespace WorkTime
 
         public void CalculateTotalWorkTime()
         {
-            Time totalWorkTime = new Time(dateTimePicker1.Value, dateTimePicker2.Value);
+            //MessageBox.Show(dateTimePicker3.Text.Substring(1, dateTimePicker3.Text.Length - 2).Replace(':', ','));
+            Time totalWorkTime = new Time(
+                dateTimePicker1.Value, 
+                dateTimePicker2.Value, 
+                TimeSpan.Parse(dateTimePicker3.Text), 
+                TimeSpan.Parse(dateTimePicker4.Text)
+                );
             TotalTime_TextBox.Text = totalWorkTime.CalculateWorkTime().ToString();
+            TimeBank_TextBox.Text = totalWorkTime.CalculateTimeBank().ToString();
         }
     }
 }
