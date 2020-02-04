@@ -26,9 +26,11 @@ namespace WorkTime
         {
             Decimal TotalWorkTime = 0.0m;
 
-            LunchTime = TimeSpan.FromHours(1.0).Subtract(LunchTime);
+            //Changed the calculation to match 38.5 hours per week or 7.7 work hours per day.  
+            //LunchTime = TimeSpan.FromHours(1.0).Subtract(LunchTime);
+            //TimeSpan differece = (EndTime - StartTime) - GymTime + LunchTime;
 
-            TimeSpan differece = (EndTime - StartTime) - GymTime + LunchTime;
+            TimeSpan differece = (EndTime - StartTime) - GymTime - LunchTime;
 
             TotalWorkTime = Convert.ToDecimal(differece.TotalHours);
 
@@ -39,7 +41,7 @@ namespace WorkTime
 
         public Decimal CalculateTimeBank()
         {
-            decimal workTime = _workTime - 8.5m;
+            decimal workTime = _workTime - 7.7m;
 
             return workTime;
         }

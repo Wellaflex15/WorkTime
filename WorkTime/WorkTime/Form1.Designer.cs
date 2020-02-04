@@ -72,7 +72,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(67, 27);
             this.dateTimePicker1.TabIndex = 2;
-            this.dateTimePicker1.Value = new System.DateTime(2020, 2, 2, 8, 0, 0, 0);
+            this.dateTimePicker1.Value = new System.DateTime(2020, 2, 2, 7, 15, 0, 0);
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // dateTimePicker2
@@ -83,7 +83,7 @@
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(67, 27);
             this.dateTimePicker2.TabIndex = 3;
-            this.dateTimePicker2.Value = new System.DateTime(2020, 2, 2, 16, 30, 0, 0);
+            this.dateTimePicker2.Value = new System.DateTime(2020, 2, 2, 16, 45, 0, 0);
             // 
             // dateTimePicker3
             // 
@@ -132,7 +132,7 @@
             this.dateTimePicker4.Name = "dateTimePicker4";
             this.dateTimePicker4.Size = new System.Drawing.Size(67, 27);
             this.dateTimePicker4.TabIndex = 8;
-            this.dateTimePicker4.Value = new System.DateTime(2020, 2, 2, 1, 0, 0, 0);
+            this.dateTimePicker4.Value = new System.DateTime(2020, 2, 2, 0, 45, 0, 0);
             // 
             // TotalTime_Label
             // 
@@ -197,7 +197,6 @@
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "Form1";
             this.Text = "WorkTime";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
