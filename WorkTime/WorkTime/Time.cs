@@ -36,12 +36,16 @@ namespace WorkTime
 
             _workTime = TotalWorkTime;
 
+            TotalWorkTime = Decimal.Round(TotalWorkTime, 1);
+
             return TotalWorkTime;
         }
 
         public Decimal CalculateTimeBank()
         {
             decimal workTime = _workTime - 7.7m;
+
+            workTime = Decimal.Round(workTime, 1);
 
             return workTime;
         }
